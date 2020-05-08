@@ -1,38 +1,55 @@
-.App {
+ul li{
+  list-style-type: none;
+  font-size: 2em;
+  transition: background-color 0.5s ease;
+  background-color: rgba(224, 224, 224, 0.74);
+}
+
+ul li:hover{
+  background-color: rgba(12, 0, 177, 0.315);
+}
+
+.todotext{
+  padding:1em;
+  padding-bottom: 0px;
+}
+
+.makeimpbtn{
+  border-radius: 50%;
+  padding: 0.5em;
+  position: relative;
+  bottom:0.3em;
+  margin-left:1em;
+}
+
+.todo{
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-animation: fadeInAnimation ease 1.5s 1 forwards;
+  animation: fadeInAnimation ease 1.5s 1 forwards;
+}
+
+.done{
+  color: rgb(28, 99, 0);
+  text-decoration: line-through;
+  background-color: rgba(224, 224, 224, 0.527);
+  cursor: pointer;
+}
+
+.importantdo{
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(224, 224, 224);
+  -webkit-animation:colorchange 15s infinite alternate;
+  animation: colorchange 15s infinite alternate;
+}
+
+.form{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input{
+  width: 30%;
+  padding:0.3em;
+  margin-right:50px;
 }
